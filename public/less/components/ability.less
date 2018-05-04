@@ -1,18 +1,19 @@
 .ability{
+	position: relative;
 	min-height: 425px;
 	border-radius: 15px;
 	margin-bottom: 40px;
+	padding-bottom: 50px;
 
-	&--col-6 {
-		flex-basis: 47.91%;
+	&__more-info {
+		position: absolute;
+		bottom: 30px;
 	}
 
-	&--col-8 {
-		flex-basis: 64.58%;
-	}
-
-	&--col-4 {
-		flex-basis: 31.26%;
+	@media (max-width: 768px) {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	&__img {

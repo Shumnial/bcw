@@ -491,10 +491,15 @@ template {
 .container:after {
   clear: both;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     width: 992px;
-    padding: 0 100px;
+    padding: 0 50px;
   }
 }
 @media (min-width: 1280px) {
@@ -1246,21 +1251,22 @@ template {
   border-radius: 10px;
 }
 .ability {
+  position: relative;
   min-height: 425px;
   border-radius: 15px;
   margin-bottom: 40px;
+  padding-bottom: 50px;
 }
-.ability--col-6 {
-  -ms-flex-preferred-size: 47.91%;
-      flex-basis: 47.91%;
+.ability__more-info {
+  position: absolute;
+  bottom: 30px;
 }
-.ability--col-8 {
-  -ms-flex-preferred-size: 64.58%;
-      flex-basis: 64.58%;
-}
-.ability--col-4 {
-  -ms-flex-preferred-size: 31.26%;
-      flex-basis: 31.26%;
+@media (max-width: 768px) {
+  .ability {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .ability__img {
   max-width: 100%;
