@@ -1,0 +1,165 @@
+{% extends layout %}
+{% block head_section %}
+{#-
+	Include something in <head />	
+-#}
+{% endblock head_section %}
+
+{% block content %}
+	<!-- <section class="section">
+		<div class="container">
+		<h1>Переменные</h1>
+		{{ Macros.Icon('i-instagram') }}
+		<ul>
+			<li>-- Инлайн ( на текущей странице ) => {{ locals.title }}</li>
+			<li>-- Локальная ( для текущей странице ) => {{ locals.description }}</li>
+			<li>-- Глобальная ( для всех страниц ) => {{ common.data.title }}</li>
+			<img src="{{ storage ~ 'images/1.png' }}" alt="">
+		</ul>
+	</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<h2 class="sr-only">Заголовок для секции только для скрин ридера</h2>
+			<div class="row">
+				<div class="col col--md-3">
+					<div class="fixed-aspect" style="background: red"></div>
+				</div>
+				<div class="col col--md-3">
+					<div class="fixed-aspect fixed-aspect--16by9" style="background: blue"></div>
+					
+				</div>
+				<div class="col col--md-3">
+					<div class="fixed-aspect fixed-aspect--4by3" style="background: green"></div>
+					
+				</div>
+				<div class="col col--md-3">
+					<div class="fixed-aspect fixed-aspect--2by1" style="background: gold"></div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<div class="intro">
+		<h1 class="intro__title">Мир коммуникаций без границ</h1>
+		<p class="intro__text subtitle">Скоро связь будет повсюду, меняя жизнь даже в самых отдаленных уголках нашей планеты</p>
+	</div>
+	<div class="container">
+		<section class="profits">
+			<div class="profits__wrapper">
+				<div class="profits__item profit">
+					<img src="" alt="" class="profit__img">
+					<p class="profit__title">Банки и взаимодействие</p>
+				</div>
+				<div class="profits__item profit">
+					<img src="" alt="" class="profit__img">
+					<p class="profit__title">Стадионы и технологии</p>
+				</div>
+				<div class="profits__item profit">
+					<img src="" alt="" class="profit__img">
+					<p class="profit__title">Интернет-магазины и онлайн маркетинг</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="container">
+		<section class="about">
+			<div class="video"></div>
+			<p class="about__text">
+				Развитие человечества на протяжении многих тысяч лет полностью поменяло наше представление о коммуникации. Первые мимолетные жесты людей друг другу привели к возникновению наскальной живописи, которая в свою очередь способствовала появлению первых языков, письму и развитию образов мышления. Без этих этапов мы бы не пришли к цифровому веку, в котором живем сейчас. В независимости от того, как меняются способы коммуникации, причина, по которой мы общаемся, остаетсянеизменной: забота друг о друге, обмен идеями и мыслями.
+			</p>
+			<p class="about__text">
+				Создание мира коммуникаций без границ – главная цель Huawei, и развитие технологий компании с каждым годом приближает нас к ее достижению все ближе.
+			</p>
+			<p class="about__text">
+				В ближайшем будущем высокоскоростные соединения станут общедоступными. общение людей и машин, обмен информацией между ними приведут к удовлетворению многих человеческих потребностей. Мы будем наслаждаться преимуществами общения с неодушевленными предметами, не воспринимая его как что-то необычное, так как подобная коммуникация станет привычной для нашей повседневной жизни.
+			</p>
+		</section>
+	</div>
+	<div class="container">
+		<section class="stories">
+			<h2 class="title">Истории объединяют</h2>
+			<div class="stories__slider"></div>
+		</section>
+	</div>
+	<div class="container">
+		<section class="transform">
+			<h2 class="title">Цифровая трансформация для бизнеса, творчества и жизни</h2>
+			<p class="subtitle">Основные 10 направлений цифровой трансформации Huawei</p>
+			<div class="transform__slider transform-slider">
+				<div class="transform-slider__item transform-slide">
+					<div class="transform-slide__content">
+						<p class="transform-slide__name">Connectivity</p>
+						<p class="transform-slide__title">Возможности подключения делают все возможное</p>
+						<p class="transform-slide__text">
+							Связность - это, по сути, мировая нервная система, и она распространяется по всему миру до такой степени, что скоро будет вездесущей. Из данных торрентов развитых стран сдерживается спрос на слаборазвитые регионы; от отдельных лиц до предприятий и стран; связь откроет беспрецедентные новые возможности.
+						</p>
+					</div>
+					<img src="{{ 'transform1.jpg'|img_asset }}" alt="" class="transform-slide__img">
+				</div>
+				<!-- <div class="transform-slider__item transform-slide">
+					<div class="transform-slide__name"></div>
+					<div class="transform-slide__title"></div>
+					<div class="transform-slide__text"></div>
+					<img src="" alt="" class="transform-slide__img">
+				</div> -->
+			</div>
+		</section>
+	</div>
+	<div class="container">
+		<section class="abilities">
+			<h2 class="title">Новые возможности с миром без границ</h2>
+			<p class="subtitle">Какие новые возможности принесет мир коммуникаций без границ?</p>
+			<div class="abilities__content">
+				<div class="abilities__item ability ability--bg-orange ability--col-6">
+					<img src="{{ 'ability1.jpg'|img_asset }}" class="ability__img">
+					<div class="ability__content ability__content--bg-orange">
+						<p class="ability__name">Стадионы</p>
+						<p class="ability__info">Компания Huawei автоматизировала стадион «Спартак»</p>
+						<a href="" class="ability__more-info">Узнать больше</a>
+					</div>
+				</div>
+				<div class="abilities__item ability ability--bg-green ability--col-6">
+					<img src="{{ 'ability2.jpg'|img_asset }}" class="ability__img">
+					<div class="ability__content ability__content--bg-green">
+						<p class="ability__name">Финансы</p>
+						<p class="ability__info">Модернизация ИТ-системы ООО «Общая карта»</p>
+						<a href="" class="ability__more-info">Узнать больше</a>
+					</div>
+				</div>
+				<div class="abilities__item ability ability--bg-blue ability--col-8">
+					<img src="{{ 'ability3.jpg'|img_asset }}" class="ability__img">
+					<div class="ability__content ability__content--bg-blue">
+						<p class="ability__name">Конференция</p>
+						<p class="ability__info">Партнерская конференция Huawei 2018. ENJOY GROWTH, WIN TOGETHER!</p>
+						<a href="" class="ability__more-info">Узнать больше</a>
+					</div>
+				</div>
+				<div class="abilities__item ability ability--bg-violet ability--col-4">
+					<img src="{{ 'ability4.jpg'|img_asset }}" class="ability__img">
+					<div class="ability__content ability__content--bg-violet">
+						<p class="ability__name">Новости</p>
+						<p class="ability__info">Huawei запускает первую в России OpenLab Moscow</p>
+						<a href="" class="ability__more-info">Узнать больше</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="container">
+		<section class="events">
+			<h2 class="title">Ключевые события из мира коммуникаций</h2>
+			<p class="subtitle">
+				Спланируйте цифровую трансформацию своего бизнеса при помощи Международного индекса развития коммуникаций – Global Connectivity Index.
+			</p>
+			<div class="events__item event">
+				<h2 class="event__title title">Узнавайте больше вместе с нами и присоединяйтесь</h2>
+				<div class="event__list"></div>
+			</div>
+		</section>
+	</div>
+{% endblock %}
+{% block footer_section %}
+	{#-
+		Include something before /body	
+	-#}
+{% endblock footer_section %}

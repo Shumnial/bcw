@@ -1,0 +1,31 @@
+.transform-slide{
+	position: relative;
+	width: 100%;
+	padding: 50px;
+	min-height: 300px;
+
+	&__content {
+		width: 57%;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 89.5%;
+		height: 100%;
+		border-radius: 10px;
+		background-color: #ecf1f5;
+		z-index: -1;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		border-radius: 10px;
+	}
+}
