@@ -4,16 +4,14 @@
 	border-radius: 15px;
 	margin-bottom: 40px;
 	padding-bottom: 50px;
+	color: #fff;
 
 	&__more-info {
 		position: absolute;
 		bottom: 30px;
-	}
-
-	@media (max-width: 768px) {
-		width: 300px;
-		margin-left: auto;
-		margin-right: auto;
+		font-size: 16px;
+		color: #fff;
+		text-decoration: none;
 	}
 
 	&__img {
@@ -23,7 +21,7 @@
 		border-top-right-radius: 5px;
 	}
 
-	&__content {
+	&__inner {
 		padding: 20px;
 	}
 
@@ -41,5 +39,17 @@
 
 	&--bg-violet {
 		background-color: #8d5fa2;
+	}
+
+	@media (max-width: @screen-sm) {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (max-width: @screen-xs) {
+		width: auto;
+		max-width: 300px;
+		min-height: 300px;
 	}
 }

@@ -40,23 +40,31 @@
 		</div>
 	</section> -->
 	<div class="intro">
-		<h1 class="intro__title">Мир коммуникаций без границ</h1>
-		<p class="intro__text subtitle">Скоро связь будет повсюду, меняя жизнь даже в самых отдаленных уголках нашей планеты</p>
+		<div class="headings">
+			<h1 class="intro__title">Мир коммуникаций без границ</h1>
+			<p class="intro__text text">Скоро связь будет повсюду, меняя жизнь даже в самых отдаленных уголках нашей планеты</p>
+		</div>
 	</div>
 	<div class="container">
 		<section class="profits">
-			<div class="profits__wrapper">
+			<div class="profits__inner">
 				<div class="profits__item profit">
-					<img src="" alt="" class="profit__img">
-					<p class="profit__title">Банки и взаимодействие</p>
+					<a href="#" class="profit__link">
+						<img src="{{ 'profit1.jpg'|img_asset }}" alt="" class="profit__img">
+					</a>
+					<p class="profit__title"><span>Банки</span> и взаимодействие</p>
 				</div>
 				<div class="profits__item profit">
-					<img src="" alt="" class="profit__img">
-					<p class="profit__title">Стадионы и технологии</p>
+					<a href="#" class="profit__link">
+						<img src="{{ 'profit2.jpg'|img_asset }}" alt="" class="profit__img">
+					</a>
+					<p class="profit__title"><span>Стадионы</span> и технологии</p>
 				</div>
 				<div class="profits__item profit">
-					<img src="" alt="" class="profit__img">
-					<p class="profit__title">Интернет-магазины и онлайн маркетинг</p>
+					<a href="" class="profit__link">
+						<img src="{{ 'profit3.jpg'|img_asset }}" alt="" class="profit__img">
+					</a>
+					<p class="profit__title"><span>Интернет-магазины</span> и онлайн маркетинг</p>
 				</div>
 			</div>
 		</section>
@@ -64,27 +72,31 @@
 	<div class="container">
 		<section class="about">
 			<div class="video"></div>
-			<p class="about__text">
-				Развитие человечества на протяжении многих тысяч лет полностью поменяло наше представление о коммуникации. Первые мимолетные жесты людей друг другу привели к возникновению наскальной живописи, которая в свою очередь способствовала появлению первых языков, письму и развитию образов мышления. Без этих этапов мы бы не пришли к цифровому веку, в котором живем сейчас. В независимости от того, как меняются способы коммуникации, причина, по которой мы общаемся, остаетсянеизменной: забота друг о друге, обмен идеями и мыслями.
+			<p class="about__text text">
+				Развитие человечества на протяжении многих тысяч лет полностью поменяло наше представление о коммуникации. Первые мимолетные жесты людей друг другу привели к возникновению наскальной живописи, которая в свою очередь способствовала появлению первых языков, письму и развитию образов мышления. Без этих этапов мы бы не пришли к цифровому веку, в котором живем сейчас. В независимости от того, как меняются способы коммуникации, причина, по которой мы общаемся, остается неизменной: забота друг о друге, обмен идеями и мыслями.
 			</p>
-			<p class="about__text">
+			<p class="about__text text text--md">
 				Создание мира коммуникаций без границ – главная цель Huawei, и развитие технологий компании с каждым годом приближает нас к ее достижению все ближе.
 			</p>
-			<p class="about__text">
+			<p class="about__text text">
 				В ближайшем будущем высокоскоростные соединения станут общедоступными. общение людей и машин, обмен информацией между ними приведут к удовлетворению многих человеческих потребностей. Мы будем наслаждаться преимуществами общения с неодушевленными предметами, не воспринимая его как что-то необычное, так как подобная коммуникация станет привычной для нашей повседневной жизни.
 			</p>
 		</section>
 	</div>
 	<div class="container">
 		<section class="stories">
-			<h2 class="title">Истории объединяют</h2>
-			<div class="stories__slider"></div>
+			<div class="headings">
+				<h2 class="title">Истории объединяют</h2>
+				<div class="stories__slider"></div>
+			</div>
 		</section>
 	</div>
 	<div class="container">
 		<section class="transform">
-			<h2 class="title">Цифровая трансформация для бизнеса, творчества и жизни</h2>
-			<p class="subtitle">Основные 10 направлений цифровой трансформации Huawei</p>
+			<div class="headings">
+				<h2 class="title">Цифровая трансформация для бизнеса, творчества и жизни</h2>
+				<p class="text">Основные 10 направлений цифровой трансформации Huawei</p>
+			</div>
 			<div class="transform__slider transform-slider">
 				<div class="transform-slider__item transform-slide">
 					<div class="transform-slide__content">
@@ -107,13 +119,15 @@
 	</div>
 	<div class="container">
 		<section class="abilities">
-			<h2 class="title">Новые возможности с миром без границ</h2>
-			<p class="subtitle">Какие новые возможности принесет мир коммуникаций без границ?</p>
-			<div class="abilities__content">
+			<div class="headings">
+				<h2 class="title">Новые возможности с миром без границ</h2>
+				<p class="text">Какие новые возможности принесет мир коммуникаций без границ?</p>
+			</div>
+			<div class="abilities__inner">
 				<div class="col--lg-6 col--md-6 col--sm-6 col--xs-12">
 					<div class="abilities__item ability ability--bg-orange">
 						<img src="{{ 'ability1.jpg'|img_asset }}" class="ability__img">
-						<div class="ability__content ability__content--bg-orange">
+						<div class="ability__inner ability__inner--bg-orange">
 							<p class="ability__name">Стадионы</p>
 							<p class="ability__info">Компания Huawei автоматизировала стадион «Спартак»</p>
 							<a href="" class="ability__more-info">Узнать больше</a>
@@ -123,7 +137,7 @@
 				<div class="col--lg-6 col--md-6 col--sm-6 col--xs-12">
 					<div class="abilities__item ability ability--bg-green">
 						<img src="{{ 'ability2.jpg'|img_asset }}" class="ability__img">
-						<div class="ability__content ability__content--bg-green">
+						<div class="ability__inner ability__inner--bg-green">
 							<p class="ability__name">Финансы</p>
 							<p class="ability__info">Модернизация ИТ-системы ООО «Общая карта»</p>
 							<a href="" class="ability__more-info">Узнать больше</a>
@@ -133,7 +147,7 @@
 				<div class="col--lg-8 col--md-8 col--sm-8 col--xs-12">
 					<div class="abilities__item ability ability--bg-blue">
 						<img src="{{ 'ability3.jpg'|img_asset }}" class="ability__img">
-						<div class="ability__content ability__content--bg-blue">
+						<div class="ability__inner ability__inner--bg-blue">
 							<p class="ability__name">Конференция</p>
 							<p class="ability__info">Партнерская конференция Huawei 2018. ENJOY GROWTH, WIN TOGETHER!</p>
 							<a href="" class="ability__more-info">Узнать больше</a>
@@ -143,7 +157,7 @@
 				<div class="col--lg-4 col--md-4 col--sm-4 col--xs-12">
 					<div class="abilities__item ability ability--bg-violet">
 						<img src="{{ 'ability4.jpg'|img_asset }}" class="ability__img">
-						<div class="ability__content ability__content--bg-violet">
+						<div class="ability__inner ability__inner--bg-violet">
 							<p class="ability__name">Новости</p>
 							<p class="ability__info">Huawei запускает первую в России OpenLab Moscow</p>
 							<a href="" class="ability__more-info">Узнать больше</a>
@@ -153,18 +167,26 @@
 			</div>
 		</section>
 	</div>
-	<div class="container">
-		<section class="events">
-			<h2 class="title">Ключевые события из мира коммуникаций</h2>
-			<p class="subtitle">
-				Спланируйте цифровую трансформацию своего бизнеса при помощи Международного индекса развития коммуникаций – Global Connectivity Index.
-			</p>
-			<div class="events__item event">
-				<h2 class="event__title title">Узнавайте больше вместе с нами и присоединяйтесь</h2>
-				<div class="event__list"></div>
+	<section class="events">
+		<div class="container">
+			<div class="headings">
+				<h2 class="title">Ключевые события из мира коммуникаций</h2>
+				<p class="text">
+					Спланируйте цифровую трансформацию своего бизнеса при помощи Международного индекса развития коммуникаций – Global Connectivity Index.
+				</p>
 			</div>
-		</section>
-	</div>
+		</div>
+		<div class="events__item event">
+			<div class="container">
+				<div class="headings">
+					<h2 class="event__title title">
+						Узнавайте больше вместе с нами и присоединяйтесь
+					</h2>
+				</div>
+			</div>
+			<div class="event__list"></div>
+		</div>
+	</section>
 {% endblock %}
 {% block footer_section %}
 	{#-
