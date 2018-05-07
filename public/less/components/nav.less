@@ -1,13 +1,53 @@
 .nav{
+	position: relative;
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	max-width: 60%;
+	
+	&__menu {
+		display: flex;
+		align-items: center;
+		min-width: 415px;
+	}
 
 	&__link {
 		display: flex;
+		color: black;
+		text-decoration: none;
+
+		&--mobile {
+			display: none;
+		}
+
 		&:not(:last-child) {
-			margin-right: 10px;
+			margin-right: 40px;
+		}
+
+		&:hover {
+			color: #d92026;
+		}
+
+		&--active {
+			color: #d92026;
+		}
+	}
+
+	@media (max-width: @screen-sm) {
+		position: static;
+
+		&__menu {
+			display: none;
+		}
+
+		&__link {
+			display: block;
+
+			&--mobile {
+				display: block;
+			}
+
+			&:not(:last-child) {
+				margin-right: 0;
+			};
 		}
 	}
 }

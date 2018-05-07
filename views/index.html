@@ -50,19 +50,19 @@
 			<div class="profits__inner">
 				<div class="profits__item profit">
 					<a href="#" class="profit__link">
-						<img src="{{ 'profit1.jpg'|img_asset }}" alt="" class="profit__img">
+						<img src="{{ 'profit1.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
 					<p class="profit__title"><span>Банки</span> и взаимодействие</p>
 				</div>
 				<div class="profits__item profit">
 					<a href="#" class="profit__link">
-						<img src="{{ 'profit2.jpg'|img_asset }}" alt="" class="profit__img">
+						<img src="{{ 'profit2.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
 					<p class="profit__title"><span>Стадионы</span> и технологии</p>
 				</div>
 				<div class="profits__item profit">
 					<a href="" class="profit__link">
-						<img src="{{ 'profit3.jpg'|img_asset }}" alt="" class="profit__img">
+						<img src="{{ 'profit3.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
 					<p class="profit__title"><span>Интернет-магазины</span> и онлайн маркетинг</p>
 				</div>
@@ -83,14 +83,48 @@
 			</p>
 		</section>
 	</div>
-	<div class="container">
-		<section class="stories">
-			<div class="headings">
-				<h2 class="title">Истории объединяют</h2>
-				<div class="stories__slider"></div>
+
+	<section class="stories">
+		<div class="headings">
+			<h2 class="title">Истории объединяют</h2>
+			<div class="stories__slider">
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
+				<div class="stories__slide">
+					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+				</div>
 			</div>
-		</section>
-	</div>
+			<div class="container container--relative">
+				<div class="stories__control"></div>
+			</div>
+		</div>
+	</section>
+
 	<div class="container">
 		<section class="transform">
 			<div class="headings">
@@ -98,22 +132,20 @@
 				<p class="text">Основные 10 направлений цифровой трансформации Huawei</p>
 			</div>
 			<div class="transform__slider transform-slider">
+				{% for item in transformSlider %}
 				<div class="transform-slider__item transform-slide">
 					<div class="transform-slide__content">
-						<p class="transform-slide__name">Connectivity</p>
-						<p class="transform-slide__title">Возможности подключения делают все возможное</p>
+						<p class="transform-slide__name">{{ item.name }}</p>
+						<p class="transform-slide__title">{{ item.title }}</p>
 						<p class="transform-slide__text">
-							Связность - это, по сути, мировая нервная система, и она распространяется по всему миру до такой степени, что скоро будет вездесущей. Из данных торрентов развитых стран сдерживается спрос на слаборазвитые регионы; от отдельных лиц до предприятий и стран; связь откроет беспрецедентные новые возможности.
+							{{item.text}}
 						</p>
 					</div>
-					<img src="{{ 'transform1.jpg'|img_asset }}" alt="" class="transform-slide__img">
+					{% if item.img %}
+					<img src="{{ item.img|img_asset }}" alt="Слайд" class="transform-slide__img">
+					{% endif %}
 				</div>
-				<!-- <div class="transform-slider__item transform-slide">
-					<div class="transform-slide__name"></div>
-					<div class="transform-slide__title"></div>
-					<div class="transform-slide__text"></div>
-					<img src="" alt="" class="transform-slide__img">
-				</div> -->
+				{% endfor %}
 			</div>
 		</section>
 	</div>
@@ -183,8 +215,21 @@
 						Узнавайте больше вместе с нами и присоединяйтесь
 					</h2>
 				</div>
+				<div class="event__links">
+					<div class="event__link">
+						<a href="http://www.huawei.com/minisite/gci/en/index.html">
+							<img src="{{ 'connect-btn.png'|img_asset }}" alt="Сайт">
+						</a>
+						<p>сайт</p>
+					</div>
+					<div class="event__link">
+						<a href="http://www.huawei.com/minisite/gci/files/gci_2017_whitepaper_en.pdf">
+							<img src="{{ 'download-btn.png'|img_asset }}" alt="Документ">
+						</a>
+						<p>документ</p>
+					</div>
+				</div>
 			</div>
-			<div class="event__list"></div>
 		</div>
 	</section>
 {% endblock %}

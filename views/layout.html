@@ -24,6 +24,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="true">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css"/>
     <link href="{{ 'style.css'|css_asset }}" rel="stylesheet" type="text/css">
     {% include "blocks/head_analitycs.html" %}
     {% block head_section %}{% endblock head_section %}
@@ -44,6 +46,13 @@
     {%- if _showPages -%}
       {% include "blocks/__pagelist.html" %}
     {%- endif -%}
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
     <script src="{{ 'common.js'|js_asset }}"></script>
     {% block footer_section %}{% endblock footer_section %}
     {% include "blocks/analitycs.html" %}

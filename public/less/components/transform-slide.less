@@ -3,6 +3,7 @@
 	width: 100%;
 	padding: 50px;
 	min-height: 300px;
+	outline: none;
 
 	&__content {
 		width: 57%;
@@ -36,5 +37,15 @@
 		right: 0;
 		margin: auto;
 		border-radius: 10px;
+	}
+
+	@media (max-width: @screen-sm) {
+		&__content {
+			width: 89%;
+		}
+
+		&__img {
+			display: none;
+		}
 	}
 }

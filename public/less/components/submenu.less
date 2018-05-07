@@ -1,0 +1,29 @@
+.submenu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 95%;
+	min-width: 30%;
+	background-color: white;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.4);
+	&__link {
+		padding: 15px 20px;
+		&:hover {
+			background-color: #dcdcdc;
+		}
+	}
+
+	&__link.nav__link {
+		margin: 0;
+	}
+
+	&--active {
+		display: block;
+	}
+
+	@media (max-width: @screen-sm) {
+		width: 100%;
+		right: 0;
+		text-align: center;
+	}
+}

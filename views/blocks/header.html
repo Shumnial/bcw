@@ -1,13 +1,23 @@
-<div class="container">
+
 	<header class="header">
 		<div class="logo">
 			<a href="http://www.huawei.com/ru/" title="Huawei Home page"><img src="{{ 'logo.png'|img_asset }}" alt=""></a>
 		</div>
 
 		<nav class="nav">
-			<a href="index.html" class="nav__link">Мир коммуникаций без границ</a>
-			<a href="http://www.huawei.com/ru/" class="nav__link">Сайт Huawei Россия</a>
+			<div class="burger">
+				<button></button>
+			</div>
+			<div class="nav__submenu submenu submenu--appear">
+				<a href="index.html" class="nav__link nav__link--mobile submenu__link">Мир коммуникаций без границ</a>
+				<a href="http://www.huawei.com/ru/" class="nav__link nav__link--mobile submenu__link">Сайт Huawei Россия</a>
+				<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/dortmund.html" class="nav__link submenu__link">Стадион</a>
+				<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/bank.html" class="nav__link submenu__link">Финансы</a>
+			</div>
+			<div class="nav__menu">
+				<a href="index.html" class="nav__link nav__link--active">Мир коммуникаций без границ</a>
+				<a href="http://www.huawei.com/ru/" class="nav__link">Сайт Huawei Россия</a>
+			</div>
 		</nav>
 		
 	</header>
-</div>

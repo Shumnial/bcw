@@ -20,7 +20,7 @@
 		{
 			"name": "index",
 			"route": "/",
-			"pageData": ["index"],
+			"pageData": ["index", "transformSlider"],
 			"pageVars": {
 				"title": "Главная страница",
 				"description": "Описание страницы",

@@ -1,0 +1,62 @@
+[
+	{
+		"name": "Connectivity",
+		"title": "Возможности подключения делают все возможное",
+		"text": "Связность - это, по сути, мировая нервная система, и она распространяется по всему миру до такой степени, что скоро будет вездесущей. Из данных торрентов развитых стран сдерживается спрос на слаборазвитые регионы; от отдельных лиц до предприятий и стран; связь откроет беспрецедентные новые возможности.",
+		"img": "transform1.jpg"
+	},
+	{
+		"name": "Cloud",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "IoT",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Video",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Government",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Transportation",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Manufacturing",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Banking",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Energy",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	},
+	{
+		"name": "Carrier",
+		"title": "Lorem ipsum dolor sit",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
+		"img": null
+	}
+]
