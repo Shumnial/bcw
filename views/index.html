@@ -52,26 +52,28 @@
 					<a href="#" class="profit__link">
 						<img src="{{ 'profit1.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
-					<p class="profit__title"><span>Банки</span> и взаимодействие</p>
+					<p class="profit__title text"><span>Банки</span> и взаимодействие</p>
 				</div>
 				<div class="profits__item profit">
 					<a href="#" class="profit__link">
 						<img src="{{ 'profit2.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
-					<p class="profit__title"><span>Стадионы</span> и технологии</p>
+					<p class="profit__title text"><span>Стадионы</span> и технологии</p>
 				</div>
 				<div class="profits__item profit">
 					<a href="" class="profit__link">
 						<img src="{{ 'profit3.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
-					<p class="profit__title"><span>Интернет-магазины</span> и онлайн маркетинг</p>
+					<p class="profit__title text"><span>Интернет-магазины</span> и онлайн маркетинг</p>
 				</div>
 			</div>
 		</section>
 	</div>
 	<div class="container">
 		<section class="about">
-			<div class="video"></div>
+			<div class="about__video">
+				<video src="{{ 'bcw.mp4'| video_asset }}" type="video/mp4" controls="" controlsList="nodownload" poster="{{ 'placeholders/bcw.jpg'| img_asset}}"></video>
+			</div>
 			<p class="about__text text">
 				Развитие человечества на протяжении многих тысяч лет полностью поменяло наше представление о коммуникации. Первые мимолетные жесты людей друг другу привели к возникновению наскальной живописи, которая в свою очередь способствовала появлению первых языков, письму и развитию образов мышления. Без этих этапов мы бы не пришли к цифровому веку, в котором живем сейчас. В независимости от того, как меняются способы коммуникации, причина, по которой мы общаемся, остается неизменной: забота друг о друге, обмен идеями и мыслями.
 			</p>
@@ -87,41 +89,20 @@
 	<section class="stories">
 		<div class="headings">
 			<h2 class="title">Истории объединяют</h2>
+		</div>
+
+		<div class="stories__wrapper">
 			<div class="stories__slider">
+				{% for item in video %}
 				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
+					<img src="{{ ('placeholders/' + item.name + '.jpg')|img_asset }}" alt="" data-id="{{ item.name }}" class="stories__preview">
 				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
-				<div class="stories__slide">
-					<img src="{{ 'video-placeholder.jpg'|img_asset }}" alt="">
-				</div>
+				{% endfor %}
 			</div>
-			<div class="container container--relative">
-				<div class="stories__control"></div>
-			</div>
+		</div>
+		
+		<div class="container container--relative">
+			<div class="stories__control"></div>
 		</div>
 	</section>
 
@@ -232,6 +213,12 @@
 			</div>
 		</div>
 	</section>
+		<div class="popup" id="popup" style="display: none">
+			<div class="popup__wrapper">
+				<video controls type="video/mp4" class="popup__video"></video>
+				<span class="popup__close"></span>
+			</div>
+		</div>
 {% endblock %}
 {% block footer_section %}
 	{#-

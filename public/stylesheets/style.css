@@ -139,6 +139,9 @@ body {
 img {
   max-width: 100%;
 }
+video {
+  cursor: pointer;
+}
 *,
 *::before,
 *::after {
@@ -1236,6 +1239,13 @@ template {
   margin: 0 auto;
   max-width: 450px;
 }
+.about__video {
+  margin-bottom: 40px;
+}
+.about__video video {
+  max-width: 100%;
+  height: auto;
+}
 .about__text {
   margin-bottom: 40px;
 }
@@ -1277,6 +1287,7 @@ template {
 }
 .nav__link--active {
   color: #d92026;
+  cursor: default;
 }
 @media (max-width: 768px) {
   .nav {
@@ -1341,8 +1352,11 @@ template {
   border-radius: 10px;
 }
 @media (max-width: 768px) {
+  .transform-slide::before {
+    width: 100%;
+  }
   .transform-slide__content {
-    width: 89%;
+    width: 100%;
   }
   .transform-slide__img {
     display: none;
@@ -1449,12 +1463,10 @@ template {
     width: auto;
   }
 }
-.profit__title {
-  font-size: 20px;
-}
 .profit__title span {
   display: block;
   font-size: 24px;
+  font-weight: 500;
   text-transform: uppercase;
   color: #00aeef;
 }
@@ -1621,15 +1633,34 @@ template {
   position: relative;
 }
 .stories__slider {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  width: 400px;
+  margin: 0 auto;
+}
+.stories__slider .slick-list {
+  overflow: visible;
+}
+.stories__wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .stories__slide {
   outline: none;
-  margin-right: 10px;
+  cursor: pointer;
+}
+.stories__preview {
+  max-width: 100%;
+  height: auto;
+}
+.stories video {
+  max-width: 100%;
+  height: auto;
 }
 .stories__control.noUi-horizontal {
   height: 3px;
-  width: 50%;
+  width: 60%;
   position: absolute;
   left: 0;
   right: 0;
@@ -1649,6 +1680,7 @@ template {
   border: 2px solid #00aeef;
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 }
 .stories__control.noUi-horizontal .noUi-handle::before,
 .stories__control.noUi-horizontal .noUi-handle::after {
@@ -1714,6 +1746,59 @@ template {
   .transform-slider .slick-slide img {
     display: none;
   }
+  .transform-slider .slick-arrow {
+    bottom: -50px;
+  }
+  .transform-slider .slick-prev {
+    left: 40%;
+  }
+  .transform-slider .slick-next {
+    right: 40%;
+  }
+  .transform-slider .slick-dots {
+    display: none;
+  }
+}
+.popup {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.popup__wrapper {
+  position: relative;
+}
+.popup video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+.popup__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+.popup__close::before,
+.popup__close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #d92026;
+}
+.popup__close::before {
+  transform: rotate(-45deg);
+}
+.popup__close::after {
+  transform: rotate(45deg);
 }
 .h-clearfix:before,
 .h-clearfix:after {
