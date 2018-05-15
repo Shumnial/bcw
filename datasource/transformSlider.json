@@ -1,62 +1,72 @@
 [
 	{
 		"name": "Connectivity",
-		"title": "Возможности подключения делают все возможное",
-		"text": "Связность - это, по сути, мировая нервная система, и она распространяется по всему миру до такой степени, что скоро будет вездесущей. Из данных торрентов развитых стран сдерживается спрос на слаборазвитые регионы; от отдельных лиц до предприятий и стран; связь откроет беспрецедентные новые возможности.",
-		"img": "transform1.jpg"
+		"title": "Связь делает возможным всё",
+		"text": "Коммуникация&nbsp;&mdash; неотъемлемая часть глобальной нервной системы, и&nbsp;со&nbsp;временем на&nbsp;планете не&nbsp;останется белых пятен. Она распространится от&nbsp;ведущих стран до&nbsp;развивающихся регионов, от&nbsp;отдельных лиц до&nbsp;целых предприятий и&nbsp;стран. Связанность всего мира откроет беспрецедентные возможности.",
+		"img": "transform1.jpg",
+		"url": "http://www.huawei.com/en/industry-insights/technology/digital-transformation/connectivity?ic_source=fbcw"
 	},
 	{
-		"name": "Cloud",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Облако",
+		"title": "Облако под рукой",
+		"text": "Переход в&nbsp;облако&nbsp;&mdash; важнейший этап глобальной цифровой трансформации. Недорогие, масштабируемые и&nbsp;гибкие сервис в&nbsp;облаке, доступные по&nbsp;требованию, помогают развивать бизнес. А&nbsp;партнерство компаний с&nbsp;ИТ-поставщиками ускоряет разработку бизнес-стратегий будущего.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/digital-transformation/cloud-at-a-touch?ic_source=fbcw"
 	},
 	{
-		"name": "IoT",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Интернет вещей",
+		"title": "Глобальная сеть",
+		"text": "Интернет вещей уже окружает нас повсюду. Он&nbsp;помогает нам отслеживать затраты электроэнергии, изучать модели поведения людей, чтобы сделать эскалаторы еще более безопасными, заранее предотвращать коммунальные аварии. Он&nbsp;ускоряет цифровую трансформацию, чтобы изменить бизнес и&nbsp;нашу повседневную жизнь.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/technology/digital-transformation/iot?ic_source=fbcw"
 	},
 	{
-		"name": "Video",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Видео",
+		"title": "Машины видят мир",
+		"text": "Видео&nbsp;&mdash; основное средство передачи информации сегодня: от&nbsp;развлечений, прямых трансляций и&nbsp;конференций до&nbsp;круглосуточного видеонаблюдения и&nbsp;автоматизации производств. Видео превращается из&nbsp;базового элемента бизнеса в&nbsp;фундаментальный потенциал, необходимый представителям любой индустрии.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/technology/digital-transformation/video?ic_source=fbcw"
 	},
 	{
-		"name": "Government",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Правительство",
+		"title": "Цифровизация правительства",
+		"text": "Чтобы создать экосистему для роста делового сообщества, повысить активность граждан и&nbsp;стимулировать общее экономическое развитие, правительству следует провести &laquo;оцифровку&raquo; госуслуг и&nbsp;сделать их&nbsp;доступными всем. В&nbsp;этом помогут надежная ИКТ-инфраструктура и&nbsp;открытые ИТ-платформы.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/technology/digital-transformation/government?ic_source=fbcw"
 	},
 	{
-		"name": "Transportation",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Транспорт",
+		"title": "Логистика будущего",
+		"text": "Мы&nbsp;движемся к&nbsp;тому, что железные дороги, автомагистрали, водные пути и&nbsp;авиалинии создадут единую автоматизированную глобальную сеть. В&nbsp;будущем логистика станет безопаснее, транспорт&nbsp;&mdash; менее загруженным и&nbsp;энергоэффективным, что сделает наши города чище, тише и&nbsp;комфортнее для жителей.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/technology/digital-transformation/transportation?ic_source=fbcw"
 	},
 	{
-		"name": "Manufacturing",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Производство",
+		"title": "Умное производство",
+		"text": "Производство продолжит играть важнейшую роль в&nbsp;мировом экономическом развитии. Но&nbsp;конкурентные преимущества пересматриваются в&nbsp;силу перемен в&nbsp;этой сфере: технологических сдвигов, экономической неопределенности и&nbsp;быстро меняющихся моделей потребления.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/digital-transformation/manufacture?ic_source=fbcw"
 	},
 	{
-		"name": "Banking",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Финансы",
+		"title": "Банки в&nbsp;эпоху интернета",
+		"text": "Движимые цифровизацией, банки меняют бизнес-процессы и&nbsp;привычный ритм обслуживания клиентов: вводятся безналичные платежи, удаленный видеобанкинг и&nbsp;кредитные проверки с&nbsp;использованием больших данных. Дальше&nbsp;&mdash; новые продукты и&nbsp;инициативы, связанные с&nbsp;финансовыми технологиями.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/digital-transformation/finance?ic_source=fbcw"
 	},
 	{
-		"name": "Energy",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Энергия",
+		"title": "От снижения затрат до исследования стоимости",
+		"text": "Производителям нефти и&nbsp;газа приходится быть более гибкими во&nbsp;всех аспектах деятельности. И&nbsp;несмотря на&nbsp;ограничения в&nbsp;бюджетах, нефтегазовые компании продолжают инвестировать в&nbsp;ИТ, чтобы не&nbsp;только снизить затраты, но&nbsp;и&nbsp;повысить ценность продукта в&nbsp;долгосрочной перспективе.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/digital-transformation/energy?ic_source=fbcw"
 	},
 	{
-		"name": "Carrier",
-		"title": "Lorem ipsum dolor sit",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus quisquam ipsam quaerat libero maxime aut beatae totam quas asperiores iste voluptates eveniet earum, suscipit tempore illum? Iusto suscipit, assumenda!",
-		"img": null
+		"name": "Телеком-операторы",
+		"title": "Путь к&nbsp;новым возможностям и&nbsp;росту",
+		"text": "Поскольку рост бизнеса замедляется из-за интенсивной конкуренции, телекоммуникационным компаниям следует обновить бизнес-структуру и&nbsp;изучить новые возможности для роста. У&nbsp;них есть уникальная возможность дать толчок повсеместной цифровизации и&nbsp;повысить свою прибыль.",
+		"img": null,
+		"url": "http://www.huawei.com/en/industry-insights/digital-transformation/telecom-carriers?ic_source=fbcw"
 	}
 ]

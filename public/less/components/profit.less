@@ -1,4 +1,5 @@
 .profit{
+	position: relative;
 
 	&__title {
 
@@ -15,8 +16,16 @@
 		display: block;
 		margin-bottom: 15px;
 
+		&::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+		}
+
 		&:hover {
 			opacity: 0.5;
+			transition: opacity 0.15s;
 		}
 	}
 }

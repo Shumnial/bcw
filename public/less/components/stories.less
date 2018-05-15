@@ -1,9 +1,17 @@
 .stories{
 	position: relative;
+	margin-bottom: 80px;
+
+	&__wrapper {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		overflow: hidden;
+		margin-bottom: 60px;
+	}
 
 	&__slider {
-		margin-bottom: 60px;
-		width: 400px;
+		max-width: 400px;
 		margin: 0 auto;
 
 		.slick-list {
@@ -11,16 +19,46 @@
 		}
 	}
 
-	&__wrapper {
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-
 	&__slide {
+		position: relative;
 		outline: none;
 		cursor: pointer;
+
+		&:hover .stories__play {
+			background-color: rgba(217, 32, 38, 0.6);
+			transition: background 0.1s;
+		}
+	}
+
+	&__play {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 70px;
+		height: 70px;
+		background-color: transparent;
+		border: 3px solid #fff;
+		border-radius: 50%;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			top: 0;
+			left: 0;
+			right: 7px;
+			bottom: 0;
+			margin: auto;
+			border: 12px solid white;
+			border-bottom-color: transparent;
+			border-left-color: transparent;
+			transform: rotate(45deg);
+			border-radius: 5px;
+		}
 	}
 
 	&__preview {

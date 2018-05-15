@@ -39,6 +39,27 @@
 		border-radius: 10px;
 	}
 
+	&__link {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 1px;
+			bottom: -1px;
+			background-color: rgba(0, 188, 242, 0);
+			transition: width 0.2s ease-out, background 0.2s ease-out;
+		}
+
+		&:hover::before {
+			width: 100%;
+			background-color: rgba(0, 188, 242, 1.0);	
+		}
+	}
+
 	@media (max-width: @screen-sm) {
 
 		&::before {

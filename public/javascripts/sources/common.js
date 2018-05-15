@@ -7,26 +7,28 @@ $(function() {
 	const popup = $('#popup');
 
 	storiesSlider.slick({
-		speed: 500,
+		speed: 200,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: false,
     arrows: false,
     centerMode: true,
     infinite: true,
+    waitForAnimate: false,
+    centerPadding: '0px',
     
 		responsive: [
 		{
 			breakpoint: 1200,
 			settings: {
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1
     }
   },
   {
   	breakpoint: 768,
   	settings: {
-  		slidesToShow: 2,
+  		slidesToShow: 1,
   		slidesToScroll: 1
   	}
   },
@@ -69,21 +71,18 @@ $(function() {
 
 	function onBurgerClick () {
 		const burger = $('.burger');
-		const submenu = $('.submenu');
+		const menu = $('.nav__menu');
 		if (burger.hasClass('burger--active')) {
 			burger.toggleClass('burger--active');
-			submenu.slideUp(250);
+			menu.slideUp(250);
 		} else {
 			burger.toggleClass('burger--active');
-			submenu.slideDown(250);
+			menu.slideDown(250)
 		}
 	}
 
 	function onControlDrag (values) {
-		
 		storiesSlider.slick('goTo', Math.ceil(values[0]));
-		console.log("handle: ", Math.ceil(values[0]));
-		//console.log("storiesSlider: ", storiesSlider.slick('getSlick'));
 	}
 
 	function onSliderDrag () {
@@ -122,7 +121,7 @@ $(function() {
 		evt.preventDefault();
 		const video = popup.find('video');
 		const img = $('.stories__preview');
-		video.attr('src', `/video/${$(this).find(img).attr('data-id')}.mp4`);
+		video.attr('src', `video/${$(this).find(img).attr('data-id')}.mp4`);
     popup.iziModal('open');
     video[0].play();
 	}
@@ -147,7 +146,24 @@ $(function() {
     }
   }
 
-	$('#myvideo').on('hover', toggleControls);
+  function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+  }
+
+	function scrollHandler () {
+		const videoBlock = $('.about__video');
+		const player = $(videoBlock).find('#bcw-video');
+		const videoPosition = videoBlock.offset().top / 2;
+		const scrollTop = $(window).scrollTop();
+
+		if (scrollTop > videoPosition) {
+				 $(player)[0].play();
+		}
+	}
 
 	$(document).on('click', 'video', onVideoClick);
 	$(document).on('click', '.popup__close', onCrossClick);
@@ -155,5 +171,6 @@ $(function() {
 	$('.burger').on('click', onBurgerClick);
 	storiesHandler[0].noUiSlider.on('update', onControlDrag);
 	storiesSlider.on('swipe', onSliderDrag);
-	/*$('.stories__preview').on('click', onPreviewClick);*/
+	$('#bcw-video').hover(toggleControls);
+	$(document).on('scroll', scrollHandler);
 })

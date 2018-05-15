@@ -1,11 +1,21 @@
 .about{
+	margin-bottom: 80px;
 
 	&__video {
+		position: relative;
 		margin-bottom: 40px;
+		width: 100%;
+
+			&:after {
+				content: "";
+				display: block;
+				padding-bottom: 60%;
+			}
 
 		video {
-			max-width: 100%;
-			height: auto;
+			width: 100%;
+			position: absolute;
+			height: 100%;
 		}
 	}
 

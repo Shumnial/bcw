@@ -6,65 +6,32 @@
 {% endblock head_section %}
 
 {% block content %}
-	<!-- <section class="section">
-		<div class="container">
-		<h1>Переменные</h1>
-		{{ Macros.Icon('i-instagram') }}
-		<ul>
-			<li>-- Инлайн ( на текущей странице ) => {{ locals.title }}</li>
-			<li>-- Локальная ( для текущей странице ) => {{ locals.description }}</li>
-			<li>-- Глобальная ( для всех страниц ) => {{ common.data.title }}</li>
-			<img src="{{ storage ~ 'images/1.png' }}" alt="">
-		</ul>
-	</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<h2 class="sr-only">Заголовок для секции только для скрин ридера</h2>
-			<div class="row">
-				<div class="col col--md-3">
-					<div class="fixed-aspect" style="background: red"></div>
-				</div>
-				<div class="col col--md-3">
-					<div class="fixed-aspect fixed-aspect--16by9" style="background: blue"></div>
-					
-				</div>
-				<div class="col col--md-3">
-					<div class="fixed-aspect fixed-aspect--4by3" style="background: green"></div>
-					
-				</div>
-				<div class="col col--md-3">
-					<div class="fixed-aspect fixed-aspect--2by1" style="background: gold"></div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<div class="intro">
 		<div class="headings">
-			<h1 class="intro__title">Мир коммуникаций без границ</h1>
-			<p class="intro__text text">Скоро связь будет повсюду, меняя жизнь даже в самых отдаленных уголках нашей планеты</p>
+			<h1 class="intro__title title">Мир коммуникаций без границ</h1>
+			<p class="intro__text text">Скоро связь будет повсюду, меняя жизнь даже в&nbsp;самых отдаленных уголках нашей планеты</p>
 		</div>
 	</div>
 	<div class="container">
 		<section class="profits">
 			<div class="profits__inner">
 				<div class="profits__item profit">
-					<a href="#" class="profit__link">
+					<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/bank.html" class="profit__link">
 						<img src="{{ 'profit1.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
 					<p class="profit__title text"><span>Банки</span> и взаимодействие</p>
 				</div>
 				<div class="profits__item profit">
-					<a href="#" class="profit__link">
+					<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/dortmund.html" class="profit__link">
 						<img src="{{ 'profit2.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
 					<p class="profit__title text"><span>Стадионы</span> и технологии</p>
 				</div>
 				<div class="profits__item profit">
-					<a href="" class="profit__link">
+					<a href="http://e.huawei.com/ru/solutions/industries/retail" class="profit__link">
 						<img src="{{ 'profit3.jpg'|img_asset }}" alt="img" class="profit__img">
 					</a>
-					<p class="profit__title text"><span>Интернет-магазины</span> и онлайн маркетинг</p>
+					<p class="profit__title text"><span>Интернет-магазины</span> и онлайн-маркетинг</p>
 				</div>
 			</div>
 		</section>
@@ -72,23 +39,20 @@
 	<div class="container">
 		<section class="about">
 			<div class="about__video">
-				<video src="{{ 'bcw.mp4'| video_asset }}" type="video/mp4" controls="" controlsList="nodownload" poster="{{ 'placeholders/bcw.jpg'| img_asset}}"></video>
+				<video id="bcw-video" src="{{ 'bcw.mp4'| video_asset }}" type="video/mp4" controlsList="nodownload" muted poster="{{ 'placeholders/bcw.jpg'| img_asset}}"></video>
 			</div>
 			<p class="about__text text">
-				Развитие человечества на протяжении многих тысяч лет полностью поменяло наше представление о коммуникации. Первые мимолетные жесты людей друг другу привели к возникновению наскальной живописи, которая в свою очередь способствовала появлению первых языков, письму и развитию образов мышления. Без этих этапов мы бы не пришли к цифровому веку, в котором живем сейчас. В независимости от того, как меняются способы коммуникации, причина, по которой мы общаемся, остается неизменной: забота друг о друге, обмен идеями и мыслями.
+				Развитие человечества на&nbsp;протяжении многих тысяч лет полностью поменяло наше представление о&nbsp;коммуникации. Первые мимолетные жесты людей друг другу привели к&nbsp;возникновению наскальной живописи, которая в&nbsp;свою очередь способствовала появлению первых языков, письму и&nbsp;развитию образов мышления. Без этих этапов мы&nbsp;бы не&nbsp;пришли к&nbsp;цифровому веку, в&nbsp;котором живем сейчас. В&nbsp;независимости от&nbsp;того, как меняются способы коммуникации, причина, по&nbsp;которой мы&nbsp;общаемся, остается неизменной: забота друг о&nbsp;друге, обмен идеями и&nbsp;мыслями.
 			</p>
 			<p class="about__text text text--md">
-				Создание мира коммуникаций без границ – главная цель Huawei, и развитие технологий компании с каждым годом приближает нас к ее достижению все ближе.
-			</p>
-			<p class="about__text text">
-				В ближайшем будущем высокоскоростные соединения станут общедоступными. общение людей и машин, обмен информацией между ними приведут к удовлетворению многих человеческих потребностей. Мы будем наслаждаться преимуществами общения с неодушевленными предметами, не воспринимая его как что-то необычное, так как подобная коммуникация станет привычной для нашей повседневной жизни.
+				Создание мира коммуникаций без границ&nbsp;&mdash; главная цель Huawei, и&nbsp;развитие технологий компании с&nbsp;каждым годом приближает нас к&nbsp;ее&nbsp;достижению все ближе.
 			</p>
 		</section>
 	</div>
 
 	<section class="stories">
 		<div class="headings">
-			<h2 class="title">Истории объединяют</h2>
+			<h2 class="title">Истории о&nbsp;коммуникации без границ</h2>
 		</div>
 
 		<div class="stories__wrapper">
@@ -96,6 +60,7 @@
 				{% for item in video %}
 				<div class="stories__slide">
 					<img src="{{ ('placeholders/' + item.name + '.jpg')|img_asset }}" alt="" data-id="{{ item.name }}" class="stories__preview">
+					<div class="stories__play"></div>
 				</div>
 				{% endfor %}
 			</div>
@@ -109,8 +74,8 @@
 	<div class="container">
 		<section class="transform">
 			<div class="headings">
-				<h2 class="title">Цифровая трансформация для бизнеса, творчества и жизни</h2>
-				<p class="text">Основные 10 направлений цифровой трансформации Huawei</p>
+				<h2 class="title">Цифровая трансформация для бизнеса, творчества и&nbsp;жизни</h2>
+				<p class="text">10&nbsp;основных направлений цифровой трансформации Huawei</p>
 			</div>
 			<div class="transform__slider transform-slider">
 				{% for item in transformSlider %}
@@ -121,6 +86,7 @@
 						<p class="transform-slide__text">
 							{{item.text}}
 						</p>
+						<a src="{{item.url}}" class="transform-slide__link">Узнать больше (англ.)</a>
 					</div>
 					{% if item.img %}
 					<img src="{{ item.img|img_asset }}" alt="Слайд" class="transform-slide__img">
@@ -131,19 +97,19 @@
 		</section>
 	</div>
 	<div class="container">
-		<section class="abilities">
+		<section class="abilities h-clearfix">
 			<div class="headings">
-				<h2 class="title">Новые возможности с миром без границ</h2>
-				<p class="text">Какие новые возможности принесет мир коммуникаций без границ?</p>
+				<h2 class="title">Новые возможности без границ</h2>
+				<p class="text">Посмотрите, как мир уже изменился благодаря технологиям Huawei.</p>
 			</div>
-			<div class="abilities__inner">
+			<div class="abilities__inner h-clearfix">
 				<div class="col--lg-6 col--md-6 col--sm-6 col--xs-12">
 					<div class="abilities__item ability ability--bg-orange">
 						<img src="{{ 'ability1.jpg'|img_asset }}" class="ability__img">
 						<div class="ability__inner ability__inner--bg-orange">
 							<p class="ability__name">Стадионы</p>
 							<p class="ability__info">Компания Huawei автоматизировала стадион «Спартак»</p>
-							<a href="" class="ability__more-info">Узнать больше</a>
+							<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/dortmund.html" class="ability__more-info">Узнать больше</a>
 						</div>
 					</div>
 				</div>
@@ -152,11 +118,21 @@
 						<img src="{{ 'ability2.jpg'|img_asset }}" class="ability__img">
 						<div class="ability__inner ability__inner--bg-green">
 							<p class="ability__name">Финансы</p>
-							<p class="ability__info">Модернизация ИТ-системы ООО «Общая карта»</p>
-							<a href="" class="ability__more-info">Узнать больше</a>
+							<p class="ability__info">Модернизация ИТ-системы ООО &laquo;Общая карта&raquo;</p>
+							<a href="http://www.huawei.com/minisite/russia/better-connected-world/ru/bank.html" class="ability__more-info">Узнать больше</a>
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="abilities h-clearfix">
+				<div class="headings">
+					<h2 class="title">Ключевые события из&nbsp;мира коммуникаций</h2>
+					<p class="text">
+						Спланируйте цифровую трансформацию своего бизнеса при помощи Международного индекса развития коммуникаций&nbsp;&mdash; Global Connectivity Index.
+					</p>
+				</div>
+				<div class="abilities__inner h-clearfix">
 				<div class="col--lg-8 col--md-8 col--sm-8 col--xs-12">
 					<div class="abilities__item ability ability--bg-blue">
 						<img src="{{ 'ability3.jpg'|img_asset }}" class="ability__img">
@@ -172,7 +148,7 @@
 						<img src="{{ 'ability4.jpg'|img_asset }}" class="ability__img">
 						<div class="ability__inner ability__inner--bg-violet">
 							<p class="ability__name">Новости</p>
-							<p class="ability__info">Huawei запускает первую в России OpenLab Moscow</p>
+							<p class="ability__info">Huawei запускает первую в&nbsp;России OpenLab Moscow</p>
 							<a href="" class="ability__more-info">Узнать больше</a>
 						</div>
 					</div>
@@ -181,33 +157,26 @@
 		</section>
 	</div>
 	<section class="events">
-		<div class="container">
-			<div class="headings">
-				<h2 class="title">Ключевые события из мира коммуникаций</h2>
-				<p class="text">
-					Спланируйте цифровую трансформацию своего бизнеса при помощи Международного индекса развития коммуникаций – Global Connectivity Index.
-				</p>
-			</div>
-		</div>
 		<div class="events__item event">
 			<div class="container">
 				<div class="headings">
 					<h2 class="event__title title">
-						Узнавайте больше вместе с нами и присоединяйтесь
+						Присоединяйтесь к&nbsp;всемирной цифровой трансформации!
 					</h2>
+					<p class="event__text text">Изучите отчет по&nbsp;результатам исследования &laquo;Глобальный индекс сетевого взаимодействия Huawei&nbsp;&mdash; 2017&raquo; в&nbsp;России и&nbsp;мире</p>
 				</div>
 				<div class="event__links">
 					<div class="event__link">
 						<a href="http://www.huawei.com/minisite/gci/en/index.html">
 							<img src="{{ 'connect-btn.png'|img_asset }}" alt="Сайт">
 						</a>
-						<p>сайт</p>
+						<p>Перейти на сайт с отчетом</p>
 					</div>
 					<div class="event__link">
-						<a href="http://www.huawei.com/minisite/gci/files/gci_2017_whitepaper_en.pdf">
+						<a target="_blank" href="http://www.huawei.com/minisite/gci/files/gci_2017_whitepaper_en.pdf">
 							<img src="{{ 'download-btn.png'|img_asset }}" alt="Документ">
 						</a>
-						<p>документ</p>
+						<p>Загрузить документ (англ.)</p>
 					</div>
 				</div>
 			</div>
